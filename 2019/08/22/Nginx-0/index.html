@@ -19,10 +19,13 @@
     <link rel="dns-prefetch" href="http://gongyanping.com">
     <!--SEO-->
 
-<meta name="keywords" content="测试">
+<meta name="keywords" content="nginx">
 
 
-<meta name="description" content="记录自己学习成长的过程">
+<meta name="description" content="一. 初识Nginx和环境准备
+Nginx是一款轻量级的HTTP服务器，采用事件驱动的异步非阻塞处理方式框架，这让其具有极好的IO性能，时常用于服务端的反向代理和负载均衡。
+
+1. Nginx的...">
 
 
 <meta name="robots" content="all">
@@ -33,7 +36,7 @@
 
 <title>
     
-    blog2 |
+    Nginx的搭建和使用 |
     
     龚彦萍的博客
 </title>
@@ -147,16 +150,16 @@
                     <p id="process"></p>
 <article class="post">
     <div class="post-head">
-        <h1 id="blog2">
+        <h1 id="Nginx的搭建和使用">
             
-            blog2
+            Nginx的搭建和使用
             
         </h1>
         <div class="post-meta">
     
     <span class="categories-meta fa-wrap">
         <i class="fa fa-folder-open-o"></i>
-        <a class="category-link" href="/categories/end/">end</a>
+        <a class="category-link" href="/categories/front/">front</a>
     </span>
     
     
@@ -164,7 +167,7 @@
         <i class="fa fa-tags"></i>
         <span class="tags-meta">
             
-            <a class="tag-link" href="/tags/测试/">测试</a>
+            <a class="tag-link" href="/tags/nginx/">nginx</a>
             
         </span>
     </span>
@@ -189,7 +192,24 @@
     </div>
     
     <div class="post-body post-content">
-        
+        <h2 id="一-初识Nginx和环境准备"><a href="#一-初识Nginx和环境准备" class="headerlink" title="一. 初识Nginx和环境准备"></a>一. 初识Nginx和环境准备</h2><blockquote>
+<p>Nginx是一款轻量级的HTTP服务器，采用事件驱动的异步非阻塞处理方式框架，这让其具有极好的IO性能，时常用于服务端的反向代理和负载均衡。</p>
+</blockquote>
+<h3 id="1-Nginx的优点"><a href="#1-Nginx的优点" class="headerlink" title="1. Nginx的优点"></a>1. Nginx的优点</h3><ul>
+<li>支持海量高并发</li>
+<li>内存消耗少</li>
+<li>免费使用可以商业化</li>
+<li>反向代理</li>
+<li>负载均衡</li>
+<li>配置文件简单</li>
+<li>…</li>
+</ul>
+<h3 id="2-Nginx的快速搭建"><a href="#2-Nginx的快速搭建" class="headerlink" title="2. Nginx的快速搭建"></a>2. Nginx的快速搭建</h3><ul>
+<li>先来查看一下yum是否已经存在<br>yum list | grep nginx<br><img src="/2019/08/22/Nginx-0/nginx0.png" alt="检查nginx是否安装" title="检查nginx是否安装"><br>上图是我已经安装过的图，所有如果你还未安装可能看到的不一样。</li>
+<li>配置yum源<br>我是在CentOS7.6版本上安装的，所以参考<a href="http://nginx.org/en/linux_packages.html" target="_blank" rel="noopener">官网安装配置</a><br><img src="/2019/08/22/Nginx-0/nginx1.png" alt="centos7.6上安装nginx" title="centos7.6上安装nginx"><br>按照此上步骤，安装并配置nginx.</li>
+</ul>
+<p><strong>注意</strong> 将baseurl=<a href="http://nginx.org/packages/centos/$releasever/$basearch/" target="_blank" rel="noopener">http://nginx.org/packages/centos/$releasever/$basearch/</a><br>的版本设为自己的版本，如我设置为<br>baseurl=<a href="http://nginx.org/packages/centos/7/$basearch/" target="_blank" rel="noopener">http://nginx.org/packages/centos/7/$basearch/</a><br>执行上面的步骤后，通过nginx -v来检测版本号，若出现版本号，则是安装成功。<br><img src="/2019/08/22/Nginx-0/nginx2.png" alt="检测nginx版本" title="检测nginx版本"></p>
+
     </div>
     
     <div class="post-footer">
@@ -214,10 +234,10 @@
     </a>
     
     
-    <a href="/2019/08/22/blog1/" class="next-post btn btn-default" title='Nginx的搭建和使用'>
+    <a href="/2019/08/20/hello-world/" class="next-post btn btn-default" title='Hello World'>
         <span class="hidden-lg">下一篇</span>
         <span class="hidden-xs">
-            Nginx的搭建和使用</span><i class="fa fa-angle-right fa-fw"></i>
+            Hello World</span><i class="fa fa-angle-right fa-fw"></i>
     </a>
     
 </div>
@@ -249,7 +269,7 @@ gitment.render('comments');
             文章目录
         </h3>
         
-        <p>暂无目录</p>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-初识Nginx和环境准备"><span class="toc-text">一. 初识Nginx和环境准备</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Nginx的优点"><span class="toc-text">1. Nginx的优点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Nginx的快速搭建"><span class="toc-text">2. Nginx的快速搭建</span></a></li></ol></li></ol>
         
     </div>
 </aside>

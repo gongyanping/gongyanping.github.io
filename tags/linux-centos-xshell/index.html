@@ -19,13 +19,10 @@
     <link rel="dns-prefetch" href="http://gongyanping.com">
     <!--SEO-->
 
-<meta name="keywords" content="nginx">
+<meta name="keywords" content="web">
 
 
-<meta name="description" content="一. 初识Nginx和环境准备
-Nginx是一款轻量级的HTTP服务器，采用事件驱动的异步非阻塞处理方式框架，这让其具有极好的IO性能，时常用于服务端的反向代理和负载均衡。
-
-1. Nginx的...">
+<meta name="description" content="记录自己学习成长的过程">
 
 
 <meta name="robots" content="all">
@@ -36,7 +33,7 @@ Nginx是一款轻量级的HTTP服务器，采用事件驱动的异步非阻塞�
 
 <title>
     
-    Nginx的搭建和使用 |
+    标签: linux centos xshell |
     
     龚彦萍的博客
 </title>
@@ -47,8 +44,6 @@ Nginx是一款轻量级的HTTP服务器，采用事件驱动的异步非阻塞�
 <link rel="icon" href="/favicon.ico">
 
     
-
-<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
 <link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.7.0">
@@ -146,128 +141,141 @@ Nginx是一款轻量级的HTTP服务器，采用事件驱动的异步非阻塞�
     <section class="content-wrap">
         <div class="container">
             <div class="row">
-                <main class="col-md-8 main-content m-post">
-                    <p id="process"></p>
+                <main class="col-md-8 main-content ">
+                    <ol class="breadcrumb">
+    
+    <li>
+        linux centos xshell
+    </li>
+    
+    
+</ol>
+
 <article class="post">
-    <div class="post-head">
-        <h1 id="Nginx的搭建和使用">
-            
-            Nginx的搭建和使用
-            
-        </h1>
-        <div class="post-meta">
     
-    <span class="categories-meta fa-wrap">
-        <i class="fa fa-folder-open-o"></i>
-        <a class="category-link" href="/categories/front/">front</a>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-            <a class="tag-link" href="/tags/nginx/">nginx</a>
-            
-        </span>
-    </span>
-    
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-clock-o"></i>
-        <span class="date-meta">
-            2019/08/22</span>
-    </span>
-    
-    <span class="fa-wrap">
-        <i class="fa fa-eye"></i>
-        <span id="busuanzi_value_page_pv"></span>
-    </span>
-    
-    
-</div>
-        
-        
-    </div>
-    
-    <div class="post-body post-content">
-        <h2 id="一-初识Nginx和环境准备"><a href="#一-初识Nginx和环境准备" class="headerlink" title="一. 初识Nginx和环境准备"></a>一. 初识Nginx和环境准备</h2><blockquote>
-<p>Nginx是一款轻量级的HTTP服务器，采用事件驱动的异步非阻塞处理方式框架，这让其具有极好的IO性能，时常用于服务端的反向代理和负载均衡。</p>
-</blockquote>
-<h3 id="1-Nginx的优点"><a href="#1-Nginx的优点" class="headerlink" title="1. Nginx的优点"></a>1. Nginx的优点</h3><ul>
-<li>支持海量高并发</li>
-<li>内存消耗少</li>
-<li>免费使用可以商业化</li>
-<li>反向代理</li>
-<li>负载均衡</li>
-<li>配置文件简单</li>
-<li>…</li>
-</ul>
-<h3 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h3>
-    </div>
-    
-    <div class="post-footer">
-        <div>
-            
-            转载声明：
-            商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="https://gongyanping.github.io/" target="_blank">gongyanping's blog</a>
-            
-            
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2019/08/29/Linux-0/">
+                    基于阿里云或虚拟机的Linux操作系统搭建</a>
+            </h1>
+            <div class="post-meta"> &bull;
+                <time class="post-date" datetime="" title="">
+                    2019年08月29日
+                </time>
+            </div>
         </div>
-        <div>
+        <p class="brief">
             
-        </div>
+            基于阿里云1. 注册阿里云账号2. 购买云服务器ECS3. 选择自己的计费方式，地域，实例，操作系统类别和存储盘等，进行购买。
+4. 在控制台中可以看到自己的云服务器，进行登录和使用。
+基于虚拟机1. 安装VMware因为这个虚拟机的...
+            
+        </p>
     </div>
 </article>
-<div class="article-nav prev-next-wrap clearfix">
-    
-    <a href="/2019/08/22/blog2/" class="pre-post btn btn-default" title='blog2'>
-        <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
-        <span class="hidden-xs">
-            blog2</span>
-    </a>
-    
-    
-    <a href="/2019/08/20/hello-world/" class="next-post btn btn-default" title='Hello World'>
-        <span class="hidden-lg">下一篇</span>
-        <span class="hidden-xs">
-            Hello World</span><i class="fa fa-angle-right fa-fw"></i>
-    </a>
-    
-</div>
 
-<div id="comments">
-    
-<script type="text/javascript" src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-    id: window.location.pathname,
-    owner: "",
-    repo: "",
-    oauth: {
-        client_id: "",
-        client_secret: ""
-    },
-    perPage: "10",
-});
-gitment.render('comments');
-</script>
-
-</div>
 
                 </main>
                 
-                    <aside id="article-toc" role="navigation" class="col-md-4">
-    <div class="widget">
-        <h3 class="title">
-            文章目录
-        </h3>
+                    
+<aside class="col-md-4 sidebar">
+    
+    
+<div class="widget">
+    <h3 class="title">
+        搜索
+    </h3>
+    <div id="search-form">
+        <div id="result-mask" class="hide"></div>
+        <div class="search-area">
+            
+            <input id="search-key" type="search" autocomplete="off" placeholder="搜点什么呢？">
+            <button type="button" class="search-form-submit" id="search-local">
+                站内搜索</button>
+            
+            
+        </div>
+        <div id="result-wrap" class="hide">
+            <div id="search-result"></div>
+        </div>
+        <div class="hide">
+            <template id="search-tpl">
+                <div class="item">
+                    <a href="/{path}" title="{title}">
+                        <div class="title">{title}</div>
+                        <div class="content">{content}</div>
+                    </a>
+                </div>
+            </template>
+        </div>
+    </div>
+</div>
+
+    
+    
+<div class="widget">
+    <h3 class="title">
+        网站公告
+    </h3>
+    <div class="notification">
+        <p>
+  My blog is officially launched. Welcome to read and comment.
+  Thanks for your support.
+</p>
+    </div>
+</div>
+
+    
+    
+    
+    
+<div class="widget">
+    <h3 class="title">
+        分类
+    </h3>
+    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/end/"><i class="fa" aria-hidden="true">end</i></a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/front/"><i class="fa" aria-hidden="true">front</i></a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/tools/"><i class="fa" aria-hidden="true">tools</i></a><span class="category-list-count">1</span></li></ul>
+</div>
+
+    
+    
+<div class="widget">
+    <h3 class="title">
+        归档
+    </h3>
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/"><i class="fa" aria-hidden="true">2019年08月</i></a><span class="archive-list-count">4</span></li></ul>
+</div>
+
+    
+    
+<div class="widget">
+    <h3 class="title">
+        标签云
+    </h3>
+    <div class="content tag-cloud">
         
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-初识Nginx和环境准备"><span class="toc-text">一. 初识Nginx和环境准备</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Nginx的优点"><span class="toc-text">1. Nginx的优点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2"><span class="toc-text">2.</span></a></li></ol></li></ol>
+        <a href="/tags/js/" style="font-size: 10px;">js</a> <a href="/tags/linux-centos-xshell/" style="font-size: 10px;">linux centos xshell</a> <a href="/tags/nginx/" style="font-size: 10px;">nginx</a>
         
     </div>
+</div>
+
+    
+    
+<div class="widget">
+    <h3 class="title">
+        友链
+    </h3>
+    <div class="content friends-link">
+        
+        <a href="http://gityuan.com/" class="fa" target="_blank">
+            袁辉辉的博客</a>
+        
+    </div>
+</div>
+
+    
 </aside>
+
                 
             </div>
         </div>
@@ -313,6 +321,8 @@ gitment.render('comments');
         </div>
     </div>
 </div>
+
+<script src="/js/search.js?rev=@@hash"></script>
 
 
 
